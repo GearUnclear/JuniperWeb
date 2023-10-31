@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Search Application</title>
+    <style>
+        /* Insert the CSS from the previous response here */
+        /* Main Styles */
+/* Main Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e2e4e5;
+    color: #6e7a78;
+    margin: 0;
+    padding: 2rem;
+}
+
+h1, h2 {
+    color: #2e465b;
+    margin-top: 0;
+}
+
+/* Form and Input Styles */
+form {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: 1px solid #6e7a78;
+}
+
+input[type="submit"] {
+    background-color: #f18a21;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #007cf5;
+}
+
+/* Results and Details Styles */
+#searchResults, #unitDetails {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#unitDetails {
+    display: none; /* Hide initially and show when a unit is selected */
+}
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Unit Search Application</h1>
+    <form action="/search" method="post">
+        <label for="unitNumber">Enter the unit number or building+unit number:</label>
+        <input type="text" id="unitNumber" name="unitNumber" placeholder="Enter unit number...">
+        <input type="submit" value="Search">
+    </form>
+
+    <div id="searchResults">
+       {% if results %}
+            <h2>Units Found:</h2>
+            <ul>
+                {% for result in results %}
+                    <li>{{ result['Building Number'] }} | {{ result['Unit Number'] }} | {{ result['Site'] }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <h2>No results found</h2>
+        {% endif %}
+    </div>
+
+    </div>
+
+    <div id="unitDetails">
+        <!-- Details of the selected unit will be shown here by Flask -->
+    </div>
+
+    <!-- You can add JavaScript here if needed, especially if you want to create dynamic interactions without refreshing the page -->
+</body>
+
+</html>
