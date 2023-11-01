@@ -7,7 +7,7 @@ import os
 app = Flask(__name__)
 
 # Load data
-data_path = r"C:\Code - Copy\__PYPROJECTS\JuniperWeb\pstep.csv"
+data_path = r"C:\Code - Copy\__PYPROJECTS\JuniperWeb\Static\pstep.csv"
 df = pd.read_csv(data_path)
 
 @app.route('/', methods=['GET'])
