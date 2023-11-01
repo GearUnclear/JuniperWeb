@@ -38,7 +38,6 @@ def show_details(unit_row):
         ('Site', 'Site'),
         ('Building Number', 'Building Number'),
         ('Unit Number', 'Unit Number'),
-        ('Assigned Programs', 'Assigned Programs')
     ]
     
     for label, column in fields:
