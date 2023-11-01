@@ -36,21 +36,8 @@ def show_details(unit_row):
         ('Address Line 1', 'Address: line1'),
         ('Address Line 2', 'Address: line2'),
         ('Site', 'Site'),
-        ('Program Name in HMIS', 'Program Name in HMIS'),
         ('Building Number', 'Building Number'),
         ('Unit Number', 'Unit Number'),
-        ('Status', 'Status'),
-        ('Family Size', 'Family Size'),
-        ('Household Type', 'Household Type'),
-        ('Staff Assigned', 'Staff Assigned'),
-        ('Unit Type', 'Unit Type'),
-        ('Bed Inventory', 'Bed Inventory'),
-        ('Disability Required', 'Disability Required'),
-        ('Chronic Homeless', 'Chronic Homeless'),
-        ('Age Range', 'Age Range'),
-        ('AMI Limit', 'AMI Limit'),
-        ('Additional Details', 'Additional Details'),
-        ('Unit Notes', 'Unit Notes'),
         ('Assigned Programs', 'Assigned Programs')
     ]
     
