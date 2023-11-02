@@ -46,5 +46,5 @@ def show_details(unit_row):
     
     return "\n".join(details_list)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+#if __name__ == '__main__':
+#    app.run(debug=True)
