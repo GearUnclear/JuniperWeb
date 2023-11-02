@@ -9,3 +9,4 @@ automatic_scaling:
   max_instances: 5  # Maximum number of instances
 
 # You can add more configurations like resource limits, network settings, etc.
+#
